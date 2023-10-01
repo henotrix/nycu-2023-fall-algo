@@ -1,0 +1,4 @@
+*.zip
+tps/
+*_data/
+*/problem-statements/*.pdf
