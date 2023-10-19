@@ -1,0 +1,9 @@
+Use a segment tree to perform these queries. 
+Since the the value of $k_i$ is at most $5$, we can keep the $5$ smallest values in each node of the segment tree.
+
+When constructing the segment tree,
+each internal node has to fetch the $5$ smallest values from its left child and $5$ from its right child,
+and select the $5$ smallest values among them. This can be done by merging two sorted arrays and select the first few elements of the merged array.
+In C++, you can use the `std::merge' function from the standard library.
+
+Updates and queries can also be performed in a similar way.
