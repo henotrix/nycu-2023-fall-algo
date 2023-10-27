@@ -1,0 +1,6 @@
+Conduct a binary search for the desired answer within the range from $1$ to $10^{18}$.
+
+In each iteration of the binary search, when the answer falls within the interval between $l$ and $r$, 
+and $m$ is calculated as $m = \lfloor \frac{l+r}{2} \rfloor$, 
+proceed to count the number of integers between $1$ and $m$ that satisfy the given condition.
+Adjust the values of $l$ or $r$ based on whether or not this count is at least $k$.

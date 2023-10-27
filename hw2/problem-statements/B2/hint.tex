@@ -1,0 +1,16 @@
+This problem is an application of the divide-and-conquer algorithm.
+
+In each iteration of the algorithm, we divide the array into two parts and calculate the sum of the following three categories:
+
+\begin{itemize}
+    \item Differences $a_j - a_i$ where both $i$ and $j$ are on the left side of the division.
+    \item Differences $a_j - a_i$ where both $i$ and $j$ are on the right side of the division.
+    \item Differences $a_j - a_i$ where $i$ is on the left side, and $j$ is on the right side of the division.
+\end{itemize}
+
+The first two sums can be found using recursion. The third sum can be calculated using a process similar to merge-sort:
+We simultaneously perform a merge sort on the array while computing the sum. 
+For each element $j$ on the right side, we calculate the sum of differences $a_j - a_i$ by determining the sum and count of elements $a_i$ 
+that satisfy the condition $a_i < a_j$. The whole algorithm runs in $\mathcal{O}(n \log n)$ time.
+
+The same technique can also be applied to solve problems such as counting inversions in an array.

@@ -1,0 +1,6 @@
+Given an array of $n$ integers $a_1,a_2,\ldots,a_n$.
+Find the sum of $a_j - a_i$ over all integer pairs $(i, j)$ satisfying $1 \leq i < j \leq n$ and $a_i < a_j$.
+
+In other words, you are required to find the following sum:
+
+\[\sum_{i=1}^{n-1} \sum_{j= i+1}^{n} \max(0, a_j - a_i)\]
