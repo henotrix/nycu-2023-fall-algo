@@ -1,0 +1,12 @@
+You are presented with a rod of length $x_n$ that has $n$ marked points. The distance between the beginning of the rod and the $i$-th marked point is denoted as $x_i$.
+
+\begin{figure}[h]
+    \center
+    \includegraphics[width=0.5\textwidth]{image/rod.png}
+    \caption{An example of rod with marked points.}
+\end{figure}
+
+Your objective is to divide the rod into $n$ pieces using $n-1$ cuts. In each cut, you choose an unselected marked point $x_i$ ($1 \leq i \leq n - 1$) and make the cut at that point. As a result, the rod containing that marked point is split into two separate pieces. The cost associated with this operation is equal to the difference in length between the two resulting rods.
+
+Your task is to determine the minimum cost required to break the rod into $n$ pieces.
+You also have to show a way to perform the cuts.

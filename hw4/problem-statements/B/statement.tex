@@ -1,0 +1,8 @@
+You have been given a grid with dimensions $n \times m$, where each cell at coordinates $(i, j)$ contains a number $a_{i,j}$, which can be positive, negative, or zero. Your starting point is cell $(1, 1)$, and your goal is to reach cell $(n, m)$.
+During your journey, from any cell $(i, j)$, you have the following options for your next move:
+\begin{itemize}
+    \item Move to cell $(i, j + 1)$, earning $a_{i, j + 1}$ points.
+    \item Move to cell $(i + 1, j)$, earning $2 \times a_{i + 1, j}$ points.
+    \item Move to cell $(i + 1, j + 1)$, earning $4 \times a_{i + 1, j + 1}$ points.
+\end{itemize}
+Your objective is to determine the maximum number of points you can accumulate when you reach cell $(n, m)$.
