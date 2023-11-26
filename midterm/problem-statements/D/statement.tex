@@ -1,0 +1,11 @@
+You have been given a grid with dimensions $n \times m$, where each cell at coordinates $(i, j)$ contains a number $a_{i,j}$, which may be positive, negative, or zero. Your journey begins at cell $(1, 1)$, and your destination is cell $(n, m)$.
+You begins with $0$ points.
+
+At each step in your journey from any cell $(i, j)$, you have two choices for your next move:
+\begin{itemize}
+    \item Move to cell $(i, j + 1)$, earning $a_{i, j + 1}$ points.
+    \item Move to cell $(i + 1, j)$, earning $a_{i + 1, j}$ points.
+\end{itemize}
+During your journey, you have the flexibility to select some cells in advance. These cells are called \textit{skipped cells}. Upon reaching a skipped cell, your earned points remain unaffected. You're allowed to pre-select at most $k$ skipped cells.
+
+Your objective is to determine the maximum number of points you can accumulate upon reaching cell $(n, m)$.
