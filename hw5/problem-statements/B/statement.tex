@@ -1,0 +1,14 @@
+You are given a graph of $n$ verticies, where the vertices are numbered from $1$ to $n$.
+Each vertex has a color of black or white.
+There are no edges between the vertices initially.
+
+$q$ queries are given. Each query belongs to one of the following three types:
+\begin{enumerate}
+    \item $1\ u_i\ v_i$ — Add an \textbf{undirected} edge between vertex $u_i$ and $v_i$.
+    \item $2\ u_i$ — Find the number of black verticies in the same connected component as $u_i$.
+    \item $3\ u_i$ — Find the nearest distance of a black vertex from vertex $u_i$.
+    The distance between two verticies is the smallest number of edges in a path between two vertices.
+    If there are no black verticies reachable from vertex $u_i$, output $-1$. 
+    \textbf{Note that the number of this type of query is limited to $100$ in this problem.}
+\end{enumerate}
+Can you answer all these queries?
