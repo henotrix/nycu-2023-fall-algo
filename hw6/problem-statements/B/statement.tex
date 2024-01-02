@@ -1,0 +1,5 @@
+You are given a directed graph with $n$ vertices and $m$ directed edges, where the vertices are numbered from 1 to $n$. Each edge in the graph is associated with a weight $w_i$.
+
+Your objective is to compute the total sum of the shortest path lengths between all pairs of vertices such that the second vertex is reachable from the first one.
+To clarify, let $dist(u, v)$ represent the shortest distance between vertices labeled $u$ and $v$ if $v$ is reachable from $u$, and $dist(u, v) = 0$ otherwise. Your program needs to output the sum of these distances computed over all vertex pairs: $\sum_{i=1}^{n} \sum_{j=1}^{n} dist(u, v)$.
+Your program also has to detect negative-weight cycles if there is any.

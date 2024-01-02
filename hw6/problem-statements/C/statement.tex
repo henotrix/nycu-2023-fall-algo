@@ -1,0 +1,9 @@
+Given a simple undirected graph with $n$ vertices and $m$ undirected edges,
+where the vertices are numbered from $1$ to $n$.
+Each edge has a weight $w_i$ while each vertex has a weight $v_i$.
+
+A subgraph within a graph constitutes a collection of selected graph vertices and edges. For a valid subgraph, the set of edges must adhere to this condition: both ends of each edge from the chosen set must be part of the selected vertices.
+
+Your goal is to choose a subgraph with the maximum \textit{value}.
+This value, for a subgraph, is calculated by summing the $w_i$ values of all edges within the subgraph and then subtracting the sum of $v_i$ values corresponding to the vertices in that subgraph.
+Output the maximum \textit{value} for a subgraph.

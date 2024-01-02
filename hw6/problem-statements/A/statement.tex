@@ -1,0 +1,13 @@
+Given an undirected connected graph with $n$ vertices and $m$ undirected edges.
+The vertices are numbered from $1$ to $n$. 
+Each edge has a color $c_i$ and a weight $w_i$.
+There are $k$ possible colors, which are numbered from $1$ to $k$.
+Each color is associated with a weight $p_i$.
+
+Your objective is to choose a subset of edges while ensuring the graph remains connected.
+The \textit{cost} of this chosen subset is calculated as the sum of the $w_i$ values of all selected edges.
+However, if any edge of a particular color $j$ is included in the subset, 
+an additional cost of $p_j$ is added specifically for that color $j$.
+Note that $p_j$ is added to the cost at most once for any subset of edges.
+
+Your goal is to determine the minimum cost required to maintain the connectivity of the graph.
