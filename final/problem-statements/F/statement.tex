@@ -1,0 +1,11 @@
+Given an integer $n$ and a sequence $a_1, a_2, \ldots, a_n$, along with $m$ pairs of integers $(f_i, s_i)$.
+Note that $a_i$ can be positive, negative or zero in this problem.
+
+Consider a set of integers $S$ where $S \subseteq \{1, 2, 3, \ldots, n\}$.
+This set is termed \textit{nice} if it fulfills the following condition:
+for every pair $(f_i, s_i)$, if $f_i$ is in $S$, then $s_i$ must also be in $S$.
+In other words, in a \textit{nice} set, it is not possible that $f_i$ is in $S$ but $s_i$ is not in $S$.
+
+The cost of the set $S$ is $\sum_{i \in S} a_i$.
+You have to calculate the maximum possible cost of a \textit{nice} set.
+Note that an empty set is always \textit{nice}, which has a cost of $0$. 
